@@ -27,14 +27,25 @@ Comparing energy production, weather data, and carbon emissions all individually
 ## Results and Conclusions
 
 First thing we did was examine the historical output of each country across one year, the orange graph shows the solar energy production and the blue show the wind energy production. We used the Germany in 2018 as an example, since it was the most recent available for both production data AND weather data, which we will get into on the next slide. You can see that there are bumps in solar energy in the middle of the year, which is unsurprising since the onset of summer means more sunlight. Interestingly, Wind seems to behave in the opposite fashion, with a lull in production over summer months. This showcases the importance of having comprehensive and diverse energy plans, that will consistently produce year-round. We can see on the side of the charts that Germany has the highest overall production, no doubt due to their very progressive sustainable energy mandates. Interestingly though, you may be able to notice that Italy has a more consistent energy production across both wind and solar energy. This is most likely due to it’s coastal location. While Germany and France are by no means landlocked, Italy is a peninsula with lots of exposure to the Mediterranean. 
+
+
+<img width="344" alt="Screen Shot 2021-04-23 at 4 52 11 AM" src="https://user-images.githubusercontent.com/72046733/116726237-dc882d80-a997-11eb-8a23-0ee50795356c.png">
+
+<img width="338" alt="Screen Shot 2021-04-23 at 4 52 06 AM" src="https://user-images.githubusercontent.com/72046733/116726244-deea8780-a997-11eb-8fd6-16bb3ea1ff5a.png">
+
 Both wind and solar energy production is aided due to its' proximity to the ocean, wind due to surface water's friction with the air, creating additional wind to power turbines, and solar due to the reflective properties of the ocean's surface, creating additional sunlight. Of course Italy is the southernmost of our three countries, and as such receives more sunlight year round.
 
 Next we wanted to compare our weather data against production to see if we could find any reliable indicators of future production. Interestingly, Temperature was not the best indicator for solar energy production. Short wave radiation was far more accurate, and just as predictable. Wind energy was found not to correlate very strongly with any of the weather data we had on hand, though temperature was close enough to be worth mentioning. But since our goal is to reliably predict production based on weather patterns, simply being worth mentioning isn’t quite good enough.
 After calculating the weather against the production for each country for one year, we were able to accurately determine the relationship between weather solar energy production for Germany, Italy, and France, with accuracy scores of over 93, 91, and 94% respectively, which is very high, and supports our initial idea of weather being correlated with energy production.
 
+<img width="397" alt="Screen Shot 2021-04-23 at 4 53 14 AM" src="https://user-images.githubusercontent.com/72046733/116726222-d72ae300-a997-11eb-8e6e-0bb1c155feda.png">
+
 The next portion of our analysis covered 9 different energy sources: Solar, wind, Oil, Coal, Dry and Liquid natural gas, Nuclear, Geothermal and Hydroelectric. Since we’re testing for these energy types and their relationship with carbon emissions, it makes sense to use the United States, the largest carbon producer in the world, to compare their relationships.
 All 9 were analyzed from the beginning of the 21st century to 2019, and as you can see in the graph in the top right and probably also know off hand, CO2 has been rapidly increasing as our society advances.
 Therefore, I thought the best course of action would be to test the production of each of our energy sources, and analyze it against the annual CO2 emission from the same timeframe to find which energy sources have the largest carbon footprints, and which we can rest a little easier while using. Unsurprisingly, Coal was the largest offender on the front, and wind had the lowest carbon impact.
+
+
+<img width="557" alt="Screen Shot 2021-04-30 at 6 04 14 AM" src="https://user-images.githubusercontent.com/72046733/116726200-d1350200-a997-11eb-87e7-974f65ef5349.png">
 
 Using the relationships we measured, we were able to predict rises in CO2 with an accuracy of 90% based on what we call the random forest method, which uses a series of yes no decisions to find the most favorable relationship.
 
